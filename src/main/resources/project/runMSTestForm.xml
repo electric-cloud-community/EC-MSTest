@@ -1,0 +1,72 @@
+    <editor>
+        <label>Invoke MSTest</label>
+        <help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#runMSTest
+		</help> 
+		  <formElement>
+            <type>entry</type>
+            <label>MSTest File Name</label>
+            <property>mstestFileName</property>
+            <required>1</required>
+            <documentation>Supply the path and name of the file that will be tested. Allowed extensions are .dll or .vsmdi.(This can be one of this two command-line options ' /testcontainer:' or ' /testmetadata:', depending on the extension of the file provided)</documentation>
+        </formElement> 
+         <formElement>
+            <type>entry</type>
+            <label>MSTest Location</label>
+            <property>mstestLocation</property>
+            <required>1</required>
+            <documentation>Supply the path and name of the MSTest.exe file.(This is the command-line '/resultsfile:' option)</documentation>
+        </formElement>
+		<formElement>
+            <type>entry</type>
+            <label>Working Directory</label>
+            <property>workingdirectory</property>
+            <required>1</required>
+            <documentation>Specify the working directory.</documentation>
+        </formElement>
+        <formElement>
+            <type>entry</type>
+            <label>Results File</label>
+            <property>resultsFile</property>
+            <required>0</required>
+            <documentation>Supply the path and name of the file where results will be saved. If no results file is specified a default results file is saved in the given working directory, if just the name specified the file is saved in the working directory with the given name and if the name and path specified the file is saved in the given path with the given name.</documentation>
+        </formElement>
+        <formElement>
+            <type>entry</type>
+            <label>RunConfig File</label>
+            <property>runconfig</property>
+            <required>0</required>
+            <documentation>Specify a run configuration file to use. (This is the command-line ' /runconfig:' option)</documentation>
+        </formElement>
+        <formElement>
+            <type>textarea</type>
+            <label>Specific Test(s)</label>
+            <property>test</property>
+            <required>0</required>
+            <documentation>Specify one or more individual tests to be run. If you specify more than one test, separate them with a space. (This is the command-line ' /test:' option)</documentation>
+        </formElement>
+        <formElement>
+            <type>entry</type>
+            <label>Test List</label>
+            <property>testlist</property>
+            <required>0</required>
+            <documentation>Supply the test list, as specified in the metadata file, to be run. This option works only if the MSTest File Name extension is ".vsmdi". (This is the command-line ' /testlist:' option)</documentation>
+        </formElement>
+		 <formElement>
+            <type>checkbox</type>
+            <label>Detail TestType</label>
+            <property>detailtesttype</property>
+            <required>0</required>
+            <documentation>Specify the type of test, possible values could be: Unit Test, N Test, among others. (This is the command-line ' /detail:testtype' option)</documentation>
+            <checkedValue>1</checkedValue>
+      		<uncheckedValue>0</uncheckedValue>
+        </formElement>
+        <formElement>
+            <type>checkbox</type>
+            <label>Detail StdOut</label>
+            <property>detailstdout</property>
+            <required>0</required>
+            <documentation>Write the message shown by Console.Writeline() that is present in test code. (This is the command-line ' /detail:stdout' option)</documentation>
+            <checkedValue>1</checkedValue>
+      		<uncheckedValue>0</uncheckedValue>
+        </formElement>
+     </editor>
