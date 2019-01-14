@@ -32,7 +32,7 @@ documentation for ideas, examples, etc. It's OK to copy word-for-word
 only if appropriate, such as FOSS - but not commercial software.
 -->
 
-    <p>July 1, 2015</p>
+    <p>January 14, 2019</p>
 
     <p>MSTest is a command line utility from Microsoft that
     executes unit tests created in Visual Studio 2005, Visual
@@ -221,7 +221,10 @@ outline used above where possible.
     "screenshot" />
 
     <h1>Release Notes</h1>
-	
+    <h2>@PLUGIN_KEY@ 1.0.5</h2>
+    <ul>
+        <li>The plugin icon has been updated.</li>
+    </ul>
 	<h2>@PLUGIN_KEY@ 1.0.4</h2>
 		<ul>
 			<li>Renamed ElectricCommander to ElectricFlow.</li>
