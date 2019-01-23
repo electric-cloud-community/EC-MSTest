@@ -5,6 +5,7 @@
     <label>@PLUGIN_KEY@</label>
     <description>Integrates MSTest Test Framework into ElectricFlow</description>
     <category>Test</category>
+    <ecSupportLevel>10</ecSupportLevel>
     <author>Electric Cloud</author>
     <authorUrl>http://www.electric-cloud.com/support</authorUrl>
     <help>EC-MSTest_help.xml</help>
